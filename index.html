@@ -1,51 +1,117 @@
 <html>
-  <head>
-
+<!--Need to make fully responsive => be able to use on different devices optimally-->
+<head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Medula+One" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Medula+One" rel="stylesheet">
-<link href="http://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<!--please copy and paste this into every page to make it look gud-->
-<style type="text/css">
- div{
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("Parallax image 1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("Parallax image 2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("Parallax Image 3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+div{
   padding: 0cm 0cm 0cm 0cm;
  }
- body{
+body{
   background-color: #43A047
  }
- h1{
-  font-family: 'Medula One', cursive;
-  font-size: 80px;
- }
- p{
+p{
   font-family: 'Medula One', cursive;
   font-size: 30px;
  }
- h3{
-  padding: 12px
-  font-size: 55px;
-  }
-  h4{
-  padding: 0cm 2cm 1cm 2cm;
+h1{
   font-family: 'Medula One', cursive;
-  }
-  h7{
-  background-color: #81C784;
-  }
-  h2{
+  font-size: 80px;
+ }
+h2{
   font-family: 'Medula One', cursive;
   font-size: 70px;
   }
-  h6{
+h3{
+  padding: 12px
+  font-size: 55px;
+  }
+h4{
+  padding: 0cm 2cm 1cm 2cm;
+  font-family: 'Medula One', cursive;
+  }
+h6{
   background-color: #388E3C;
   font-size: 45px;
   }
-  .jumbotron{
+h7{
+  background-color: #81C784;
+  }
+.jumbotron{
   background-color: #388E3C;
   border-radius: 6px;
   }
- </style>
+span{
+  font-family: 'Medula One', cursive;
+  font-size: 70px;
+}
+</style>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
 
 </head>
 <body>
@@ -120,24 +186,39 @@
         <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
     </div>
 </form>
-
-            </a></li>
-            
-          </ul>
-        </li>
-          </ul>
-        </li>
-        
-        <h8><form class="navbar-form navbar-right" role="search">
+</a></li>
+ </ul>
+</li>
+</ul>
+</li>      
+        <form class="navbar-form navbar-right" role="search">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
-</form></h8>
+</form>
 </ul>
 </nav>
 </nav>
-<h4>
+<div class="bgimg-1">
+<div class="caption">
+    <span class="border">Welcome!</span>
+     </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;font-family: 'Medula One', cursive;
+  font-size: 60px;">
+  <h3 style="text-align:center;">About the organization</h3>
+  <p>The Green Foundation was founded in August 2005 and is non-profit organisation that aims to assist and uplift rural communities with the support of environmental projects. We have raised more than 4 million to date and have won the hope award in 2007 and 2010. To date, we have assisted 45 rural communities in South Africa, Botswana and Zambia and planted more than 30000 tress. For a full outline of our projects per area, please see our projects booklet, attached. Our staff currently includes two full time project coordination, a marketing coordinator and five administrative staff members. We also have for part time volunteers during various stages of the year. Our main message is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income for income generation are created.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; font-family: 'Medula One', cursive;
+  font-size: 60px;">Join us!</span>
+  </div>
+</div>
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -149,17 +230,17 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <center><img src="Carousel Image 2.png" width="580" alt="..."></center>
+      <center><img src="Carousel Image 2.png" width="1080" alt="..."></center>
       <div class="carousel-caption">
       </div>
     </div>
     <div class="item">
-      <center><img src="Carousel Image 1.png" width="580" alt="..."></center>
+      <center><img src="Carousel Image 1.png" width="1080" alt="..."></center>
       <div class="carousel-caption">
       </div> 
     </div>
     <div class="item">
-      <center><img src="Carousel Image 3.png" width="580" alt="..."></center>
+      <center><img src="Carousel Image 3.png" width="1080" alt="..."></center>
       <div class="carousel-caption">
       </div> 
     </div>
@@ -175,11 +256,28 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-</h7>
-<h4>
-  <left><h1>About the organization</h1></left>
-  <left><p>The Green Foundation was founded in August 2005 and is non-profit organisation that aims to assist and uplift rural communities with the support of environmental projects. We have raised more than 4 million to date and have won the hope award in 2007 and 2010. To date, we have assisted 45 rural communities in South Africa, Botswana and Zambia and planted more than 30000 tress. For a full outline of our projects per area, please see our projects booklet, attached. Our staff currently includes two full time project coordination, a marketing coordinator and five administrative staff members. We also have for part time volunteers during various stages of the year. Our main message is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income for income generation are created.</p></left>
-  </h3>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f4a460; font-family: 'Medula One', cursive;
+  font-size: 60px;"><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=iwsLJARf6Z5cxQuBgNi_v2gmn5HlTJTDPDuDXt3Jap-q9VZno6-MojQU-9G&dispatch=5885d80a13c0db1f8e263663d3faee8d333dc9aadeed3fe0b5b299d55fd35542">Please Donate</a></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;font-family: 'Medula One', cursive;
+  font-size: 60px;">
+    <h1><font size="5"> History </font></h1>
+    <p>The Green Foundation was founded in August 2005 and is a non-profit organisation that aims to assist and uplift rural communities with the support of environmental projects. We have raised more than R 4 million to date and have won the Hope Award in 2007 and 2010. To date, we have assisted 45 rural communities in South Africa, Botswana and Zambia and planted more than 30,000 trees.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <h1><font size="5"> Mission and Vision </font></h1>
+    <span class="border">Our main mission is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income generation are created.</span>
+  </div>
+</div>
 <footer class="text-muted well" id="last-footer">
     <section>
     <div class="row" style="font-size:11px;">
@@ -261,6 +359,18 @@
         </form>   
     </div></div>    
      </div>
+  </footer>
 </body>
-   <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Main -->
+  <script src="js/main.js"></script>
+
 </html>
