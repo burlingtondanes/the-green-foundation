@@ -3,7 +3,7 @@
 <head>
 <!--Meta-->
 <meta name=viewport content='width=700'>
-
+<meta charset="UTF-8">
 <!--Links-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Medula+One" rel="stylesheet">
@@ -99,6 +99,15 @@ span{
   font-family: 'Medula One', cursive;
   font-size: 70px;
 }
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 </style>
   <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
   
@@ -257,13 +266,6 @@ span{
 <div>
     <a class="twitter-timeline" data-width="600" data-height="500" data-link-color="#19CF86" href="https://twitter.com/The_G_F">Tweets by The_G_F</a>
 </div>
-<div>
-  <iframe style="float:right">
-  <div class="reddit-embed" data-width="600" data-embed-media="www.redditmedia.com" data-embed-parent="false" data-embed-live="false" data-embed-uuid="a68f92e0-2106-4310-82d8-91faaa27bea8" data-embed-created="2016-12-06T11:57:21.406Z"><a href="https://www.reddit.com/r/RateMyWork/comments/5gsagk/please_rate_our_website_out_of_10/dauo2ww/">Comment</a> from discussion <a href="https://www.reddit.com/r/RateMyWork/comments/5gsagk/please_rate_our_website_out_of_10/">Please Rate Our Website Out of 10</a>.</div>
-<script async src="https://www.redditstatic.com/comment-embed.js"></script>
-</iframe>
-</div>    
-<div>
   <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -300,17 +302,31 @@ span{
         <p>Our main mission is that poverty and environmental degradation are intrinsically linked. By educating communities to respect the environment, opportunities for income generation are created.<p>
   </div>
 </div>
-
-<footer class="text-muted well" id="last-footer">
-    <section>
-    <div class="row" style="font-size:11px;">
-    <div class="container">
-    <h5 class="subhead" style="text-align:center;">All We Need Is Your Love</h5>
-    <center><h5 class="subhead">"The Green Foundation"-2016<h5><center>
-       <p>Use of this site constitutes acceptance of our User Agreement and Privacy Policy (updated). © 2016 TheFeenGroundation inc. All rights reserved.<br>
-                                    <center>TGF and the TGF Logo are unregistered trademarks of BDA_BTEC_Computing_2016-2018.<center><p>
-
-  </footer>
+<footer class="page-footer">
+          <div class="container">
+            <div class="row" style="font-size:11px;">
+              <div class="col l6 s12">
+                <h5 class="white-text">All We Need Is Your Love</h5>
+                <p class="grey-text text-lighten-4">"The Green Foundation"-2016</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="shop.html">Shop</a></li>
+                  <li><a class="grey-text text-lighten-3" href="news articles.html">News</a></li>
+                  <li><a class="grey-text text-lighten-3" href="staff.html">Staff</a></li>
+                  <li><a class="grey-text text-lighten-3" href="events calendar.html">Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Use of this site constitutes acceptance of our User Agreement and Privacy Policy (updated). © 2016 TheFeenGroundation inc. All rights reserved.TGF and the TGF Logo are unregistered trademarks of BDA_BTEC_Computing_2016-2018.
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 </body>
   <script src="http://code.jquery.com/jquery.js"></script>
   <!-- jQuery -->
